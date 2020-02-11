@@ -15,14 +15,23 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Car fiat = new Car ("Fiat Punto", 2010, "black", 45);
+        fiat.showData();
+        
+        Car ford = new Car ("Ford Fiesta", 2015, "red", 40, 10, 5);
+        ford.showData();
+        
+        Car lada = new Car ("Lada Niva", 1980, "zelena", 50, 40, 12);
+        lada.showData();
         
         
-        System.out.println("Pocetak");   
+    /*    System.out.println("Pocetak");   
         
         String message = "Ovo je poruka";
         
         Car fiat = new Car();
-        fiat.model = "Punto";
+        //fiat.model = "Punto";
+        fiat.setModel("Fiat punto");
         fiat.buildYear = 2010;
         fiat.color = "Black";
         fiat.consuption = 6;
@@ -30,21 +39,19 @@ public class Main {
         fiat.currentFuel = 20;
         fiat.maxFuel = 45;
         
-        System.out.println("Model:" + fiat.model);
-        System.out.println("Godina proizvodnje :" + fiat.buildYear);
+        fiat.showData();
        
         
         Car ford = new Car ();
-        ford.model = "Ford Fiesta";
+        //ford.model = "Ford Fiesta";
+        ford.setModel("Ford Fiesta");
         ford.buildYear = 2015;
-        
-        System.out.println("Model:" + ford.model);
-        System.out.println("Godina proizvodnje :" + ford.buildYear);
+        ford.maxSpeed = 200;
               
+        ford.showData(); */
         
         
-        
-        
+        //System.out.println("Model:" + ford.getModel());
         
         
         
