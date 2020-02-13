@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package main.factory;
 
 /**
  *
- * @author budimir
+ * @author qa
  */
 public class Main {
 
@@ -15,43 +10,70 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Car fiat = new Car ("Fiat Punto", 2010, "black", 45);
-        fiat.showData();
-        
-        Car ford = new Car ("Ford Fiesta", 2015, "red", 40, 10, 5);
-        ford.showData();
-        
-        Car lada = new Car ("Lada Niva", 1980, "zelena", 50, 40, 12);
-        lada.showData();
-        
-        
-    /*    System.out.println("Pocetak");   
+ 
+        System.out.println("Pocetak");
         
         String message = "Ovo je poruka";
         
-        Car fiat = new Car();
-        //fiat.model = "Punto";
-        fiat.setModel("Fiat punto");
-        fiat.buildYear = 2010;
-        fiat.color = "Black";
-        fiat.consuption = 6;
-        fiat.maxSpeed = 180;
-        fiat.currentFuel = 20;
-        fiat.maxFuel = 45;
-        
+        Car fiat = new Car("Fiat Punto", 2010, "black", 45);
         fiat.showData();
-       
-        
-        Car ford = new Car ();
-        //ford.model = "Ford Fiesta";
-        ford.setModel("Ford Fiesta");
-        ford.buildYear = 2015;
-        ford.maxSpeed = 200;
-              
-        ford.showData(); */
+        //Car = ("Fiat Punto", 2010, "black", 6, 20, 45)
         
         
-        //System.out.println("Model:" + ford.getModel());
+        /*fiat.setModel("Fiat Punto");
+        fiat.setBuildYear(2010);
+        fiat.setColor("black");
+        fiat.setConsumption(6);
+        fiat.setCurrentFuel(20);
+        fiat.setMaxFuel(45);
+        fiat.setMaxSpeed(170);*/
+        
+        
+        Car ford = new Car("Ford", 2015, "red", 40, 10, 5, 300); 
+        ford.showData();
+        
+        /*ford.setModel("Ford fiesta");
+        ford.setBuildYear(2015);*/
+        
+        
+        
+        //System.out.println("Model: " + ford.getModel());
+        
+        Car lada = new Car("Lada Niva", 1980, "green", 50, 40, 10, 500);
+        lada.showData();
+        lada.travel(20);
+        lada.showData();
+        lada.travel(200);
+        lada.showData();
+        lada.fuelUp(20);
+        lada.travel(400);
+        
+        
+        
+        
+        
+        
+       // Car peugeot = new Car();
+      //  peugeot.model = "Peugeot 3008";
+      //  peugeot.buildYear = 2017;
+       // peugeot.color = "silver";
+       // peugeot.consumption = 6;
+       // peugeot.maxSpeed = 170;
+       // peugeot.currentFuel = 35;
+       // peugeot.maxFuel = 60;
+        
+        
+        
+       // System.out.println("Model: " + peugeot.model);
+      //  System.out.println("Godina proizvodnje: " + peugeot.buildYear);
+       // System.out.println("Boja: " + peugeot.color);
+        //System.out.println("Potrosnja: " + peugeot.consumption);
+       // System.out.println("Maximalna brzina: " + peugeot.maxSpeed);
+       // System.out.println("Trenutno stanje goriva: " + peugeot.currentFuel);
+       // System.out.println("Maximalna potrosnja: " + peugeot.maxFuel);
+        
+        
+        
         
         
         
